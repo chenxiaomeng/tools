@@ -10,28 +10,16 @@
     <artifactId>service</artifactId>
     <packaging>jar</packaging>
 
-    <name>springmvc-template-service</name>
-    <url>http://maven.apache.org</url>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.cxm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>module</artifactId>
-            <version>1.0</version>
         </dependency>
         <!-- log4j2 -->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.logging.log4j</groupId>-->
-            <!--<artifactId>log4j-api</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.logging.log4j</groupId>-->
-            <!--<artifactId>log4j-core</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-web</artifactId>

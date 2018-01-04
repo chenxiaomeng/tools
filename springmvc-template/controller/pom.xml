@@ -14,9 +14,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.cxm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>service</artifactId>
-            <version>1.0</version>
         </dependency>
         <!-- spring -->
         <dependency>

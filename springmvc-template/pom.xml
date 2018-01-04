@@ -7,7 +7,6 @@
     <artifactId>springmvc</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
-    <name>springmvc-template</name>
 
     <properties>
         <!-- Others -->
@@ -25,6 +24,18 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- children module -->
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>module</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- Spring -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -342,8 +353,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
