@@ -12,8 +12,8 @@
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://172.16.33.152:3306/mars?characterEncoding=UTF-8&amp;autoReconnect=true"
-                        userId="envision"
-                        password="Envisi0n">
+                        userId=""
+                        password="">
         </jdbcConnection>
 
         <javaTypeResolver>
