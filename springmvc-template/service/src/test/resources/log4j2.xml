@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="PRJHOME">D:\envision</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] %m%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="${env:PRJHOME}/log/conf.rpt.service.log"
+                     filePattern="${env:PRJHOME}\log\confcenter-%d{yyyy-MM-dd}-%i.all.log.gz">
+            <PatternLayout pattern="%-d{yyyy-MM-dd HH:mm:ss} [%c]-[%p] - %m%n"/>
+            <!-- 日志文件大小 -->
+            <SizeBasedTriggeringPolicy size="50MB"/>
+            <!-- 最多保留文件数 -->
+            <DefaultRolloverStrategy max="1000"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="PRJHOME">/data/applogs/mars</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{DEFAULT} [%c.%M:%L]-[%p] %m%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="${PRJHOME}/log/mars.service.log"
+                     filePattern="${PRJHOME}/log/mars-%d{yyyy-MM-dd}-%i.all.log.gz">
+            <PatternLayout pattern="%d{DEFAULT} [%c.%M:%L]-[%p] %m%n"/>
+            <!-- 日志文件大小 -->
+            <SizeBasedTriggeringPolicy size="500MB"/>
+            <!-- 最多保留文件数 -->
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
