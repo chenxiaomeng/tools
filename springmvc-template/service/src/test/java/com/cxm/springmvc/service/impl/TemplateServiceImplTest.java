@@ -6,12 +6,11 @@ import com.cxm.springmvc.service.TemplateService;
 import com.github.pagehelper.PageInfo;
 import org.junit.Assert;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+
+import javax.annotation.Resource;
 
 public class TemplateServiceImplTest extends CommonTest {
-    @Autowired
-    @Qualifier("templateServiceImpl")
+    @Resource
     private TemplateService templateService;
 
     @Test
