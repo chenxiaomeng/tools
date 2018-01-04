@@ -6,10 +6,9 @@
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url"
-                  value="jdbc:mysql://172.16.33.152:3306/mars-test?characterEncoding=UTF-8&amp;autoReconnect=true"/>
-        <property name="username" value=""/>
-        <property name="password" value=""/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
 
         <property name="initialSize" value="1"/>
         <property name="minIdle" value="1"/>

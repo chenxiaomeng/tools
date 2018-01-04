@@ -7,30 +7,6 @@
 
         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
 
-    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url"
-                  value="jdbc:mysql://172.16.33.152:3306/mars-test1?characterEncoding=UTF-8&amp;autoReconnect=true"/>
-        <property name="username" value=""/>
-        <property name="password" value=""/>
-
-        <property name="initialSize" value="1"/>
-        <property name="minIdle" value="1"/>
-        <property name="maxActive" value="1"/>
-
-        <property name="validationQuery" value="select 'x'"/>
-        <property name="testWhileIdle" value="true"/>
-        <!-- 获取连接时最大等待时间，单位毫秒 -->
-        <property name="maxWait" value="10000"/>
-        <!-- 单位：秒，检测连接是否有效的超时时间 -->
-        <property name="validationQueryTimeout" value="300"/>
-        <!-- https://github.com/alibaba/druid/wiki/连接泄漏监测 -->
-        <!-- 打开removeAbandoned功能 -->
-        <property name="removeAbandoned" value="true"/>
-        <!-- 300秒，也就是5分钟 -->
-        <property name="removeAbandonedTimeout" value="300"/>
-    </bean>
-
     <!-- 初始化数据结构 -->
     <jdbc:initialize-database data-source="dataSource" ignore-failures="ALL">
         <jdbc:script location="classpath:spring-test/mysql_db_create.sql"/>
