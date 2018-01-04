@@ -79,17 +79,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>envision.repo</id>
-            <name>envision internal repository for released artifacts</name>
-            <url>http://nexus.envisioncn.com/content/repositories/envision</url>
-        </repository>
-        <snapshotRepository>
-            <id>envision.repo.snapshots</id>
-            <name>envision internal repository for snapshots artifacts</name>
-            <url>http://nexus.envisioncn.com/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
