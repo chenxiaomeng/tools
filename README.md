@@ -7,3 +7,4 @@
 ## 目录
 
 [SpringMVC Maven Archetype](./springmvc-template/README.md)
+[React Mbox](./react-mbox-template/README.md)

@@ -102,10 +102,10 @@ Module，Service，Controller是目前非常流行的分层方式。虽然结构
 3. [Druid](https://github.com/alibaba/druid)是一个提供监控的数据库链接池，并且相比较C3P0更加稳定。
 
 ### MVC - SpringMVC
-[SpringMVC](https://docs.spring.io/spring/docs/4.3.x/spring-framework-reference/html/)是目前应该最广泛的MVC框架，相比较struct，jersy，SpringMVC有强大的团队支持，并且有一整套开发解决方案。相比较于SpringBoot，多了很多需要手动处理的配置，但是Tomcat容器通用的端口更加易维护，并且发布的包更小。
+[SpringMVC](https://docs.spring.io/spring/docs/4.3.x/spring-framework-reference/html/)是目前应该最广泛的MVC框架，相比较Struct和Jersy，SpringMVC有强大的团队支持，并且有一整套开发解决方案。相比较于SpringBoot，多了很多需要手动处理的配置，但是Tomcat容器通用的端口更加易维护，并且发布的包更小。
 
 ### APIDOC - Swagger
 [Swagger](https://swagger.io/)是目前应用非常广泛的API生成框架，用于生成API接口文档。集成方便简洁。
 
 ### Log - Log4j2
-[log4j2](https://logging.apache.org/log4j/2.x/)是一个接口更加灵活，性能更加好的日志模块。推荐使用
+[Log4j2](https://logging.apache.org/log4j/2.x/)是一个接口更加灵活，性能更加好的日志模块。推荐使用
